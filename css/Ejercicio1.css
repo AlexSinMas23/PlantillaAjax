@@ -23,9 +23,10 @@ body
 .fila
 {
     background.color: white;
-    height: 50px;
+    height: 30px;
     width: 90%;
-    margin: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 .seccionred
 {
