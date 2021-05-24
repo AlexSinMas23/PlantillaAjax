@@ -15,7 +15,8 @@ function cargaDatos()
 	xhttp.onreadystatechange = function(){
 		if (this.readyState == 4 && this.status == 200){
 			//console.log(this.responseText);
-			document.querySelector('#textoMostrar').innerHTML = this.responseText;
+			//document.querySelector('#textoMostrar').innerHTML = this.responseText;
+			gestionarFicheroTXT(this.responseText);
 		}
 		else if (this.status == 404){
 			//console.log(this.responseText);
@@ -23,3 +24,16 @@ function cargaDatos()
 		}
 	}
 }
+
+
+
+function  gestionarFicheroTXT(txt)
+{
+  let lineas = txt.split("\n")
+  for(let i of lineas)
+    document.querySelector("div:nth-child(2)").innerHTML += "<p>" + i + "</p>"
+}
+/*
+document.querySelector("div:nth-child(1)").addEventListener("mouseover",()=>{
+ loadLDocA("leerFicherotxt.txt","txt");
+})*/
