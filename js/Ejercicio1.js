@@ -29,9 +29,15 @@ function cargaDatos()
 
 function  gestionarFicheroTXT(txt)
 {
+	let filaMostrar = document.querySelector('#filas');
+	filaMostrar.innerHTML = '';
   let lineas = txt.split("\n")
   for(let i of lineas)
-    document.querySelector("div:nth-child(2)").innerHTML += "<p>" + i + "</p>"
+  filaMostrar.innerHTML += `
+  <tr>
+	  <td class="fila">${i}</td>
+  </tr>`;
+    //document.querySelector("div:nth-child(2)").innerHTML += "<p>" + i + "</p>"
 }
 /*
 document.querySelector("div:nth-child(1)").addEventListener("mouseover",()=>{
