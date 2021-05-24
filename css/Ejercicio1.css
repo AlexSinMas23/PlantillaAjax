@@ -25,6 +25,7 @@ body
     background.color: white;
     height: 50px;
     width: 100px;
+    margin: 20px;
 }
 .seccionred
 {
@@ -36,7 +37,6 @@ body
     border: none;
     height: 40px;
     width: 100px;
-    margin: 20px;
 }
 .btn:hover
 {
