@@ -41,3 +41,7 @@ body
     transition: 1s;
     opacity: 80%;
 }
+.miNone
+{
+    display: none;
+}
