@@ -20,11 +20,11 @@ body
     border-radius: 5px;
     border: solid double 1px;
 }
-.seccion
+.fila
 {
     background.color: white;
     height: 50px;
-    width: 100px;
+    width: 90%;
     margin: 20px;
 }
 .seccionred
