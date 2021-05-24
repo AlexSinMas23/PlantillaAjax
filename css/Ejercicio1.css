@@ -10,11 +10,13 @@ body
 }
 .cont
 {
-    background: blue;
+    background: white;
     height: 500px;
     width: 500px;
 
     display: flex;
+    border-radius: 5px;
+    border: solid double 1px;
 }
 .seccion
 {
