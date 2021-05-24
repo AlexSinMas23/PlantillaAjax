@@ -17,5 +17,9 @@ function cargaDatos()
 			//console.log(this.responseText);
 			document.querySelector('#textoMostrar').innerHTML = this.responseText;
 		}
+		else if (this.status == 404){
+			//console.log(this.responseText);
+			document.querySelector('#textoMostrar').innerHTML = "ERROR 404";
+		}
 	}
 }
